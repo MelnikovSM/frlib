@@ -5,7 +5,7 @@ print('Taking picture from WebCam..')
 pic, timestamp = frlib.captureFrame()
 
 faces=frlib.cropFaces(pic)
-if not len(faces)==0:
+if not faces==None:
 	fcount=0
 	for face in faces:
 		print('Handling face{face} via FaceRecognizer..'.format(face=fcount))
@@ -15,3 +15,4 @@ if not len(faces)==0:
 			print('face{face}: Face recognized successfuly!'.format(face=fcount))
 		else: print('face{face}: STOCK REJECTED!'.format(face=fcount))
 		fcount=+1
+else: print('No faces found!')

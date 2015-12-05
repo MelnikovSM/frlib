@@ -7,7 +7,7 @@ Library (or, hope be honest, just case of functions) wroten by Melnikov Sergey, 
 FR Lib - image library for Python, containing the basic functions needed for face recognition using OpenCV (just simplified OpenCV functions call, nothing more)..
 The requirements for the operation: Python 2.7.X with a working module CV2 + Haar cascades (requires a file that was originally sought in the /usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml, it can be corrected on the 15th line).
 
-# Description of functions:
+# Describtion of functions:
 
 captureFrame([device]) - returns image CV2 and a string date snapshot, on input can accept video device number (default value 0)
 Example of use: img, timestamp = frlib.captureFrame()
